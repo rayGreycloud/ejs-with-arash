@@ -16,6 +16,10 @@ app.get('/', function(req, res, err) {
   res.render('home');
 });
 
+app.get('/about', function(req, res, err) {
+  res.render('about');
+});
+
 app.listen(3000, function(err) {
   if (err) {
     console.log(err);
